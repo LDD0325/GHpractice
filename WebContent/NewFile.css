@@ -1,0 +1,62 @@
+@charset "EUC-KR";
+*{
+font-family: 'Noto Sans KR', sans-serif;
+list-style: none; /*목록에 점 없애주는거*/
+text-decoration: none; /*하이퍼링크에 밑줄,색없애주는거*/
+border-collapse: collapse; /*테이블에 선이다따로떨어져있는걸 없애줌*/
+margin:0px;
+padding:0px;
+color:#000;
+}
+
+.intro_bg{ /*배경화면!*/
+	background-image:url("image/star4.jpg");
+	width:100%;
+	height:718px;
+}
+
+.header{ 
+	display:flex; /*이거쓰니까 원래 검색창밑에 네비들이있었는데 검색옆으루 옮겨짐*/
+	width:1280px;
+	margin:auto;
+	height:86px;
+}
+.searchArea{
+	width:300px;
+	height:40px;
+	background:rgba(0,0,0,0.5); /*0.5퍼정도 반투명하단소리?*/
+	border-radius:5px; /*모서리둥글기*/
+	margin-top:24px; /*24정도 내려주기*/
+}
+
+.searchArea > form > input{
+	border:none;
+	width:250px;
+	height:40px;
+	background:rgba(0,0,0,0.0);
+	color:#fff; 
+	padding-left:10px; /*얘넣으니까 안정적으루 됨*/
+}
+
+.searchArea > form > span{ /*검색이라는 글씨*/
+	width:50px;
+	color:#fff; 
+	font-weight:bold;
+	cursor:pointer;
+	
+}
+
+.nav{ /*얘네는 html에있는 nav들*/
+	display:flex; /*이거쓰니까 네비들이 옆으로 쫘라락 감*/
+	justify-content: flex-end; /*글씨들을 끝으로붙야주기*/
+	line-height: 86px; /*글씨들 86px정도밑으로내랴오게함*/
+	width:calc(1280px - 300px);
+}
+
+.nav > li{
+	margin-left:84px; /*네비들 간격*/
+}
+
+.nav > li > a{ /*네비안에 li안에 a*/
+	color:#fff;
+}
